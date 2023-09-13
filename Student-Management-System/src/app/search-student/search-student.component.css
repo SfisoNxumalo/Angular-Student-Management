@@ -1,0 +1,22 @@
+body{
+   height: 80px;
+   background-color: aqua;
+   padding-top: 10px;
+}
+
+.search-div {
+    display: flex;
+    gap: 5px;
+}
+
+.search-div input[type="search"] {
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 16px;
+}
+
+.search-div button{
+    border: 0px;
+    border-radius: 0px 5px 5px 0px;
+}
