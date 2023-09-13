@@ -1,0 +1,86 @@
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+  }
+input[type=date], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 20%;
+    background-color: #DDA0DD;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 60%;
+    margin-right: 20%;
+    
+  }
+  
+  input[type=submit]:hover {
+    background-color: #611561;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-position: center;
+    background-color: #f2f2f2;
+    padding: 2px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  h3 {
+    align-items: center;
+    font-size: large;
+    font-display:initial;
+  }
+  label{
+    text-align: center;
+    text-wrap:balance;
+    padding-left: 20px;
+  }
+
+#studentNumber{
+    margin-left: 5%;
+}
+#fname{
+    margin-left: 12%;
+}
+#lname{
+    margin-left: 12%;
+}
+#dob{
+    margin-left: 8.5%;
+}
+#emailAddress{
+    margin-left: 7.5%;
+}
+#phoneNumber{
+    margin-left: 1%;
+}
+#address{
+    margin-left: 4%;
+}
+#course{
+    margin-left: 15.5%;
+}
+
