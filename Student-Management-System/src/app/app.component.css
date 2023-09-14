@@ -4,15 +4,38 @@ nav {
     margin: 0px;
     height: 75px;
     background-color: black;
-    padding: 8px;
+    padding: 8px 25px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-lbl{
+    height: 25px;
+    width: 25px;
+    font-size: 17px;
+    display: flex;
+    font-weight: bold;
+    margin-left: 5px;
+    border-radius: 100%;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-lbl:hover{
+    color: black;
+    font-weight: bold;
+    background-color: white;
 }
 
 .title-div{
     font-size: 60px;
     font-weight: 800;
-    color: white;
     height: 100%;
-    padding-left: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -22,7 +45,6 @@ nav {
 .title-div .title-ext{
     font-size: 17px;
     font-weight: 700;
-    color: white;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -33,5 +55,5 @@ nav {
 /* ----------- Main Body ----------- */
 
 .main-back{
-    background: red;
+    padding: 40px 20px;
 }
