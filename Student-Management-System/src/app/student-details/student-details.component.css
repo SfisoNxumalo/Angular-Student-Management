@@ -1,5 +1,5 @@
 input[type=text], select {
-    width: 30%;
+    width: 40%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -9,7 +9,7 @@ input[type=text], select {
     
   }
 input[type=date], select {
-    width: 30%;
+    width: 40%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -20,7 +20,7 @@ input[type=date], select {
   
   input[type=submit] {
     width: 20%;
-    background-color: #DDA0DD;
+    background-color: #000000;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -63,24 +63,24 @@ input[type=date], select {
     margin-left: 5%;
 }
 #fname{
-    margin-left: 12%;
+    margin-left: 14%;
 }
 #lname{
-    margin-left: 12%;
+    margin-left: 14.5%;
 }
 #dob{
-    margin-left: 8.5%;
+    margin-left: 11%;
 }
 #emailAddress{
-    margin-left: 7.5%;
+    margin-left: 9%;
 }
 #phoneNumber{
-    margin-left: 1%;
+    margin-left: 1.5%;
 }
 #address{
-    margin-left: 4%;
+    margin-left: 5.5%;
 }
 #course{
-    margin-left: 15.5%;
+    margin-left: 19.5%;
 }
 
