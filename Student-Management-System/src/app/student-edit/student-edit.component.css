@@ -1,83 +1,39 @@
-h1{
-    /* background-color: rgb(103, 103, 214); */
+h1 {
     margin-left: 45%;
-    
+ }
+/* Style the form container */
+form {
+    /* max-width: 400px; */
+    margin: 0 auto;
+    width: 920px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* margin-left: 5%; */
 }
 
-.container{
-    background-color: rgb(155, 101, 101);
-    margin-left: 20%;
-    margin-right: 13%;
-}
+/* Style the form labels and inputs */
+/* label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 25%;
+} */
 
-#studentNo{
-    margin-left: 30%;
-    position: relative;
-    width:200px ;
-    height:30px ;
-    margin-top: 2%;
-}
-
-#firstName{
-    margin-left: 30%;
-    position: relative;
-    width:200px ;
-    height:30px ;
-    margin-top: 2%; 
-}
-
-#lastName{
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 25%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     margin-left: 50%;
-    margin-top: -3%;
-    position: fixed;
-    width:200px ;
-    height:30px ;
-}
 
-#dateOfBirth{
-    margin-left: 30%;
-    position: relative;
-    width:200px ;
-    height:30px ;
-    margin-top: 2%;  
-}
-
-#emailAddress{
-    margin-left: 50%;
-    margin-top: -3%;
-    position: fixed;
-    width:200px ;
-    height:30px ;  
-}
-
-#cellNo{
-    margin-left: 30%;
-    position: relative;
-    width:200px ;
-    height:30px ;
-    margin-top: 2%;   
-}
-
-#course{
-    margin-left: 50%;
-    margin-top: -3%;
-    position: fixed;
-    width:200px ;
-    height:30px ;
-    
 }
 
 #save{
-    margin-top: 5%;
-  margin-left: 30% ;
-  width: 100px;
-  height: 40px;  
+    margin-left: 10%;
 }
-
 #cancel{
-    margin-left: 20%;
-    width: 100px;
-    height: 40px;
+    margin-left: 50%;
 }
-
-

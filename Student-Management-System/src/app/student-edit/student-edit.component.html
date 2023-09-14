@@ -8,55 +8,63 @@
            
                   <div class="form-group">
                    
-          
+                    <label for="studentNo" class="studentNo">Student Number:</label>
                     <input id="studentNo" type="text" required placeholder="Student Number" class="form-control"
                            name="studentNo" ngModel > 
                   </div>
   
                   <div class="form-group">
                   
-  
+                    <label for="firstName" class="firstName">First Name:</label>
                     <input id="firstName" type="text" required placeholder="firstName" class="form-control"
                           name="firstName" ngModel>
                   </div>
   
                   <div class="form-group">
                     
-  
+                    <label for="lastName" class="lastName">Last Name:</label>
                     <input id="lastName" type="text" required placeholder="lastName" class="form-control"
                           name="lastName" ngModel>
                   </div>
 
                   <div class="form-group">
                       
-  
-                      <input id="dateOfBirth" required type="text"  placeholder="Date of birth"  class="form-control"
+                    <label for="dateOfBirth" class="dateOfBirth">Date of Birth:</label>
+                      <input id="dateOfBirth" required type="date"  placeholder="Date of birth"  class="form-control"
                             name="dateOfBirth" ngModel>
                      </div>
    
   
                     <div class="form-group">
                       
-  
+                        <label for="emailAddress" class="emailAddress">Email Address:</label>
                        <input id="emailAddress" required type="text"  placeholder="Email Address" class="form-control"
                             name="emailAddress" ngModel>
                     </div> 
 
                     <div class="form-group">
                       
-  
+                        <label for="cellNo" class="cellNo">Cell Number:</label>
                         <input id="cellNo" required type="text"  placeholder="Cell Number" class="form-control"
                              name="cellNo" ngModel>
                      </div> 
 
                      <div class="form-group">
                       
-  
+                        <label for="address" class="address">Address:</label>
+                        <input id="address" required type="text"  placeholder="Address" class="form-control"
+                             name="address" ngModel>
+                     </div> 
+
+                     <div class="form-group">
+                      
+                        <label for="course" class="course">Course:</label>
                         <input id="course" required type="text"  placeholder="Course" class="form-control"
                              name="course" ngModel>
                      </div> 
   
-                    
+                     <button class="btn btn-primary" id="save" type="submit">Save</button>
+                     <button class="btn btn-primary" id="cancel" type="submit">Cancel</button>
                   
                     
              </form>
@@ -64,6 +72,6 @@
  
   
              
-              <button class="btn btn-primary" id="save" type="submit">Save</button>
-              <button class="btn btn-primary" id="cancel" type="submit">Cancel</button>
+              
+              
             </div>
