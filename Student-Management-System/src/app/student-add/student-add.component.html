@@ -1,55 +1,120 @@
+<!-- <div class="container">
+    <h1>Edit Details</h1>
+  
+ 
+  
+            <form #userForm= >
+                
+           
+                  <div class="form-group">
+                   
+                    <label for="studentNo" class="studentNo">Student Number:</label>
+                    <input id="studentNo" type="text" required placeholder="Student Number" class="form-control"
+                           name="studentNo" ngModel > 
+                  </div>
+  
+                  <div class="form-group">
+                  
+                    <label for="firstName" class="firstName">First Name:</label>
+                    <input id="firstName" type="text" required placeholder="firstName" class="form-control"
+                          name="firstName" ngModel>
+                  </div>
+  
+                  <div class="form-group">
+                    
+                    <label for="lastName" class="lastName">Last Name:</label>
+                    <input id="lastName" type="text" required placeholder="lastName" class="form-control"
+                          name="lastName" ngModel>
+                  </div>
 
+                  <div class="form-group">
+                      
+                    <label for="dateOfBirth" class="dateOfBirth">Date of Birth:</label>
+                      <input id="dateOfBirth" required type="date"  placeholder="Date of birth"  class="form-control"
+                            name="dateOfBirth" ngModel>
+                     </div>
+   
+  
+                    <div class="form-group">
+                      
+                        <label for="emailAddress" class="emailAddress">Email Address:</label>
+                       <input id="emailAddress" required type="text"  placeholder="Email Address" class="form-control"
+                            name="emailAddress" ngModel>
+                    </div> 
 
-    <h2>Add Student</h2>
-    <br/>
-    <br/>
-    <form >
-        <div class="full-details">
-            <label for="Student number">Student Number</label>
-            <input type="text" id="Student number" Student number="Student number" required>
-        </div>
+                    <div class="form-group">
+                      
+                        <label for="cellNo" class="cellNo">Cell Number:</label>
+                        <input id="cellNo" required type="text"  placeholder="Cell Number" class="form-control"
+                             name="cellNo" ngModel>
+                     </div> 
 
+                     <div class="form-group">
+                      
+                        <label for="address" class="address"> Physical Address:</label>
+                        <input id="address" required type="text"  placeholder="Address" class="form-control"
+                             name="address" ngModel>
+                     </div> 
 
-        <div>
-            <label for="First name">First Name</label>
-            <input type="text" id="First name" First name="First name" required>
-        </div>
+                     <div class="form-group">
+                      
+                        <label for="course" class="course">Course:</label>
+                        <input id="course" required type="text"  placeholder="Course" class="form-control"
+                             name="course" ngModel>
+                     </div> 
+  
+                     <button class="btn btn-primary" id="save" type="submit">Save</button>
+                     <button class="btn btn-primary" id="cancel" type="submit">Cancel</button>
+                  
+                    
+             </form> -->
+            <!-- </div> -->
+            <div class="container">
+                <h1>Add Details</h1>
+                <form #userForm>
+                  <div class="form-group">
+                    <label for="studentNo" class="studentNo">{{studentDetails.email}}</label>
+                    <input id="studentNo" type="text" required placeholder="Student Number" class="form-control" name="studentNo" [(ngModel)] = "studentDetails.studentNumber" >
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="firstName" class="firstName">First Name:</label>
+                    <input id="firstName" type="text" required placeholder="First Name" class="form-control" name="firstName"  [(ngModel)] = "studentDetails.firstName" >
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="lastName" class="lastName">Last Name:</label>
+                    <input id="lastName" type="text" required placeholder="Last Name" class="form-control" name="lastName" [(ngModel)] = "studentDetails.lastName" >
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="dateOfBirth" class="dateOfBirth">Date of Birth:</label>
+                    <input id="dateOfBirth" required type="date" placeholder="Date of Birth" class="form-control" name="dateOfBirth" [(ngModel)] = "studentDetails.dateOfBirth" >
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="emailAddress" class="emailAddress">Email Address:</label>
+                    <input id="emailAddress" required type="text" name="studentDetails.email" placeholder="Email Address" class="form-control" [(ngModel)] = "studentDetails.email" >
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="cellNo" class="cellNo">Cell Number:</label>
+                    <input id="cellNo" required type="text" placeholder="Cell Number" class="form-control" [(ngModel)] = "studentDetails.phoneNumber" name="phoneNumber" >
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="address" class="address">Physical Address:</label>
+                    <input id="address" required type="text" placeholder="Physical Address"   [(ngModel)] = "studentDetails.address" class="form-control" name="address" >
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="course" class="course">Course:</label>
+                    <input id="course" required type="text" placeholder="Course" [(ngModel)] = "studentDetails.course" class="form-control" name="course" >
+                  </div>
 
-
-        <div>
-            <label for="Last name">Last Name</label>
-            <input type="text" id="Last name" Last name="Last name" required>
-        </div>
-
-
-        <div>
-            <label for="email">Email Address</label>
-        <input type="text" id="email" email="email" required>
-        </div>
-
-        <div>
-            <label for="phoneNumber">Cellphone Number</label>
-        <input type="text" id="phoneNumber" phoneNumber="phoneNumber" required>
-        </div>
-
-
-        <div>
-            <label for="Date of birth">Date of birth</label>
-            <input type="date" id="Date of birth" Date of birth="Date of birth" required>
-        </div>
-
-        <div>
-            <label for="Address">Physical Address</label>
-            <textarea type="text" id="Address" rows="8" cols="88"></textarea>
-        </div>
-
-
-        <div>
-            <label for="Course">Course</label>
-            <input type="text" id="Course" Course="Course" required>
-        </div>
-
-        <button type="submit">Add Student</button>
+        <button type="submit"   (click)="post()">Add Student</button>
     </form>
+
+    
 
 
