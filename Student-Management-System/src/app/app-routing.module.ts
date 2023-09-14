@@ -8,7 +8,6 @@ import { SearchStudentComponent } from './search-student/search-student.componen
 
 const routes: Routes = [
 
-  
   {path: "dashboard", component: ViewStudentsComponent},
   {path:"add-student" ,component: StudentAddComponent },
   {path:"student-details", component: StudentDetailsComponent},
