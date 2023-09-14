@@ -3,7 +3,7 @@
          }
         /* Style the form container */
         form {
-            max-width: 400px;
+            
             margin: 0 auto;
             padding: 20px;
             border: 1px solid #ccc;
@@ -29,21 +29,25 @@
             margin-left: 25%;
 
         }
+        textarea{
+            margin-left: 25%;
+          }
 
         /* Style the submit button */
         button[type="submit"] {
-            background-color: #007BFF;
+            background-color: #1d1f20;
             color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            margin-left: 40%;
+            margin-left: 51.5%;
+            width: 25%;
         }
         
          /* Add hover effect to the submit button */
          button[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #000000;
             
         }
          
