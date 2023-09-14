@@ -1,39 +1,111 @@
-h1 {
+/* h1 {
     margin-left: 45%;
+    margin-top: -1%;
  }
 /* Style the form container */
-form {
+ form {
     /* max-width: 400px; */
-    margin: 0 auto;
-    width: 920px;
-    padding: 20px;
+     margin: 0 auto;
+    width: 900px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    /* margin-left: 5%; */
-}
+    margin-left: 17%;
+    padding-left: 2%;
+} 
 
-/* Style the form labels and inputs */
-/* label {
-    display: block;
-    margin-bottom: 5px;
-    margin-left: 25%;
+/* .studentNo{
+    margin-top: 15%;
+    position: relative;
+    margin-left: 20%;
+} */
+/* .firstName{
+    margin-left: 20%;
+}  */
+/* .lastName{
+    margin-left: 20%;
+}
+.dateOfBirth{
+    margin-left: 20%;
+}
+.emailAddress{
+    margin-left: 20%;
+}
+.course{
+    margin-left: 20%;
+    margin-bottom: 8px;
+}
+.cellNo{
+    margin-left: 20%;
+    margin-bottom: 8px;
+    
+    
+
+}
+.address{
+    margin-left: 20%;
+    margin-bottom: 8px;
 } */
 
-input[type="text"],
+
+
+/* input[type="text"],
 input[type="email"],
 input[type="date"] {
-    width: 25%;
+    width: 50%;
     padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-left: 50%;
+    margin-left: 45%;
+    margin-top: -2%;
 
-}
+} */
 
-#save{
-    margin-left: 10%;
+/* #save{
+     margin-left: 20%;
+    width: 120px;
+    height: 30px;
 }
 #cancel{
     margin-left: 50%;
-}
+    width: 120px;
+    height: 30px;
+    top: 55%;
+}   */
+
+.container {
+    text-align: center;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    flex: 1;
+    /* text-align: right; */
+    padding-right: 20px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="date"] {
+    flex: 2;
+    width:30%;
+    margin-left: 12%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button-group {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Add any additional CSS styling as needed */
+  
+  

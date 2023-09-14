@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
-const student_api = ""
+const student_api = "http://localhost:3865/students/"
  
 
 @Injectable({
@@ -14,7 +15,17 @@ export class StudentService {
     private http: HttpClient
 
   ) { }
+  
 
+ post(data:any): Observable<any> {
+    return this.http.post(
+      student_api + "create",
+      data
+       
+
+      
+    );
+  }
   getStudent(data: any, id: any){
     return this.http.get(student_api+id)
   }
@@ -24,20 +35,14 @@ export class StudentService {
 
   getAllStudent(){
     
-    return this.http.get(student_api, httpOptions)
+    return this.http.get(student_api,)
   }
-}
-createStudent(data: any){
 
-  return this.http.post(student_api, httpOptions)
-}
+  deleteOne (data:any, id: any){
 
+    return this.http.put(student_api+id, data)
+  }
 
-
-
-
-deleteStudent(studentid: any, id: any){
-  return this.http.delete(student_api + `${studentid}/${id}`, httpOptions)
 }
 
 
@@ -46,4 +51,5 @@ deleteStudent(studentid: any, id: any){
 
 
 
-@
+
+
