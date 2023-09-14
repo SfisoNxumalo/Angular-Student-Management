@@ -1,5 +1,5 @@
 h2 {
-  margin-left: 45%;
+  margin-left: 43%;
 }
 /* Style the form container */
 form {
@@ -28,6 +28,9 @@ input[type="date"] {
   border-radius: 4px;
   margin-left: 25%;
 
+}
+textarea{
+  margin-left: 25%;
 }
 
 /* Style the submit button */
