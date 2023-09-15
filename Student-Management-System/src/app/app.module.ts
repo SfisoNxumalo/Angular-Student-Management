@@ -12,6 +12,7 @@ import { StudentAddComponent } from './student-add/student-add.component';
 import { ViewStudentsComponent } from './view-students/view-students.component';
 import { SearchStudentComponent } from './search-student/search-student.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { SearchStudentComponent } from './search-student/search-student.componen
     StudentAddComponent,
     StudentDetailsComponent,
     ViewStudentsComponent,
-    SearchStudentComponent
+    SearchStudentComponent,
+    StudentDetailsComponent
   ],
   imports: [
     BrowserModule,

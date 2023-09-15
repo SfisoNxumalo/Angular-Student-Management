@@ -1,4 +1,36 @@
-<app-search-student></app-search-student>
-<div class="div-view">
+<h2>Students</h2>
 
+
+<div class="div-view">
+    
+<app-search-student></app-search-student>
+
+<div class="div-table">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Student Number</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>DOB</th>
+                <th>Course</th>
+            </tr>
+
+            </thead>
+
+        <tbody>
+            <tr *ngFor="let student of students">
+                <td>{{student.studentDetails}}</td>
+                <td>{{student.studentNumber}}</td>
+                <td>{{student.firstName}}</td>
+                <td>{{student.lastName}}</td>
+                <td>{{student.dateOfBirth}}</td>
+                <td>{{student.course}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
 </div>
+</div>
+

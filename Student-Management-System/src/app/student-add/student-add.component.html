@@ -2,46 +2,55 @@
                 <h1>Add Details</h1>
                 <form #userForm>
                   <div class="form-group">
-                    <label for="studentNo" class="studentNo">{{studentDetails.email}}</label>
+                    <label for="studentNo" class="studentNo">Student Number</label>
                     <input id="studentNo" type="text" required placeholder="Student Number" class="form-control" name="studentNo" [(ngModel)] = "studentDetails.studentNumber" >
                   </div>
               
                   <div class="form-group">
-                    <label for="firstName" class="firstName">First Name:</label>
+                    <label for="firstName" class="firstName">First Name</label>
                     <input id="firstName" type="text" required placeholder="First Name" class="form-control" name="firstName"  [(ngModel)] = "studentDetails.firstName" >
                   </div>
               
                   <div class="form-group">
-                    <label for="lastName" class="lastName">Last Name:</label>
+                    <label for="lastName" class="lastName">Last Name</label>
                     <input id="lastName" type="text" required placeholder="Last Name" class="form-control" name="lastName" [(ngModel)] = "studentDetails.lastName" >
                   </div>
               
                   <div class="form-group">
-                    <label for="dateOfBirth" class="dateOfBirth">Date of Birth:</label>
+                    <label for="dateOfBirth" class="dateOfBirth">Date of Birth</label>
                     <input id="dateOfBirth" required type="date" placeholder="Date of Birth" class="form-control" name="dateOfBirth" [(ngModel)] = "studentDetails.dateOfBirth" >
                   </div>
               
                   <div class="form-group">
-                    <label for="emailAddress" class="emailAddress">Email Address:</label>
+                    <label for="emailAddress" class="emailAddress">Email Address</label>
                     <input id="emailAddress" required type="text" name="studentDetails.email" placeholder="Email Address" class="form-control" [(ngModel)] = "studentDetails.email" >
                   </div>
               
                   <div class="form-group">
-                    <label for="cellNo" class="cellNo">Cell Number:</label>
+                    <label for="cellNo" class="cellNo">Cell Number</label>
                     <input id="cellNo" required type="text" placeholder="Cell Number" class="form-control" [(ngModel)] = "studentDetails.phoneNumber" name="phoneNumber" >
                   </div>
               
                   <div class="form-group">
-                    <label for="address" class="address">Physical Address:</label>
-                    <input id="address" required type="text" placeholder="Physical Address"   [(ngModel)] = "studentDetails.address" class="form-control" name="address" >
+                    <label for="address" class="address">Physical Address</label>
+                    <textarea id="address" rows="8" cols="88" required type="text" placeholder="Physical Address"   [(ngModel)] = "studentDetails.address" class="form-control" name="address" ></textarea>
                   </div>
               
                   <div class="form-group">
-                    <label for="course" class="course">Course:</label>
-                    <input id="course" required type="text" placeholder="Course" [(ngModel)] = "studentDetails.course" class="form-control" name="course" >
+                    <label for="course" class="course">Course</label>
+                    <input list="co" id="course" required type="text" placeholder="Course" [(ngModel)] = "studentDetails.course" class="form-control" name="course" >
+                    <datalist id="co">
+                      <option value="Art">
+                        <option value="Music">
+                          <option value="Business Management">
+                            <option value="IT">
+                              <option value="Civil"></option>
+                            
+
+                    </datalist>
                   </div>
 
-        <button type="submit"   (click)="post()">Add Student</button>
+        <button type="submit" (click)="post()">Add Student</button>
     </form>
 
     

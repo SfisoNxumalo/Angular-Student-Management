@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 
 export class SearchStudentComponent {
 
+  // foundUsers = ["Sfiso", "Sfiso 2", "Sfiso 2", "Sfiso 2", "Sfiso 2", "Sfiso 2", "Sfiso 2", "Sfiso 2"];
+  foundUsers = [];
 }
+
