@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { StudentService } from '../student.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-student-edit',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./student-edit.component.css']
 })
 export class StudentEditComponent  {
+
+  constructor(private serviceStudents : StudentService){}
 
   studentDetails = {
 
@@ -24,17 +27,20 @@ export class StudentEditComponent  {
 
 student: any [] = []
 
-onSave(){
+// updateStudent(){
+//   this.serviceStudents.put(this.studentDetails).subscribe({
+
+//   });
+
+// onSave(){
 
   
-console.log(this.studentDetails)
-this.student.push(this.studentDetails)
-// console.log(this.student)
+// console.log(this.studentDetails)
+// this.student.push(this.studentDetails)
+// // console.log(this.student)
 
+// }
 }
-
-}
-
 
 
 

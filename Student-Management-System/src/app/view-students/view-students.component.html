@@ -14,137 +14,21 @@
                 <th>Firstname</th>
                 <th>Lastname</th>
                 <th>DOB</th>
-                <th>Option</th>
+                <th>Course</th>
             </tr>
 
         </thead>
 
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
+            <tr *ngFor="let student of students">
+                <td>{{student.studentDetails}}</td>
+                <td>{{student.studentNumber}}</td>
+                <td>{{student.firstName}}</td>
+                <td>{{student.lastName}}</td>
+                <td>{{student.dateOfBirth}}</td>
+                <td>{{student.course}}</td>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>            <tr>
-                <td>1</td>
-                <td>1234567</td>
-                <td>Sfiso</td>
-                <td>Mawila</td>
-                <td>04/11/2009</td>
-                <td>1</td>
-            </tr>
+            
         </tbody>
     </table>
 </div>

@@ -26,16 +26,16 @@ export class StudentService {
       
     );
   }
-  getStudent(data: any, id: any){
-    return this.http.get(student_api+id)
+  getStudent(id: any){
+    return this.http.get(student_api+"getStudents/"+id)
   }
   updateStudents(data: any, id: any){
-    return this.http.put(student_api+id, data)
+    return this.http.put(`${student_api+id}`, data)
   }
 
   getAllStudent(){
     
-    return this.http.get(student_api,)
+    return this.http.get<any[]>(`${student_api}/getStudents`)
   }
 
   deleteOne (data:any, id: any){
