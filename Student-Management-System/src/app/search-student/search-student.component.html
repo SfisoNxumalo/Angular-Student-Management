@@ -1,6 +1,9 @@
-<body>
+<div  class="search-div-holder">
     <div class="search-div">
         <input type="search" placeholder="search...">
+        <ul>
+            <li *ngFor="let i of foundUsers">{{i}}</li>
+        </ul>
     </div>
     
-</body>
+</div>
