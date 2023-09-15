@@ -25,7 +25,7 @@ export class ViewStudentsComponent {
     // this.studentService.getAllStudent().subscribe(student=> this.students = student)
     this.studentService.getAllStudent().subscribe({
       next: (data)=>{
-        (this.students = data)
+        (this.students = data.reverse())
       },
       error: (e)=> console.log(e)
     })
