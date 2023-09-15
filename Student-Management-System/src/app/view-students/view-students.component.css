@@ -55,6 +55,11 @@ th:nth-child(6){
     padding: 8px;
 }
 
+.div-table table tbody tr a{
+    width: 100%;
+    background-color: #4F94CD;
+}
+
 .div-table table tbody tr:nth-of-type(even){
     background-color: rgb(196, 196, 196);
 }

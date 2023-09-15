@@ -25,6 +25,7 @@ export class ViewStudentsComponent {
     this.studentService.getAllStudent().subscribe({
       next: (data)=>{
         (this.students = data)
+        console.log(data)
       },
       error: (e)=> console.log(e)
     })
