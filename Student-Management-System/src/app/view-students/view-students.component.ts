@@ -26,6 +26,7 @@ export class ViewStudentsComponent {
       next: (data)=>{
         (this.students = data)
         console.log(data)
+        (this.students = data.reverse())
       },
       error: (e)=> console.log(e)
     })
