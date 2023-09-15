@@ -1,9 +1,15 @@
 <div  class="search-div-holder">
-    <div class="search-div">
-        <input type="search" placeholder="search...">
-        <ul>
-            <li *ngFor="let i of foundUsers">{{i}}</li>
-        </ul>
+    
+    <div class="action-holder">
+        <button type="button" routerLink="/add-student">+</button>
+        
+        <div class="search-div">
+            <input type="search" placeholder="search...">
+            <ul>
+                <li *ngFor="let i of foundUsers">{{i}}</li>
+            </ul>
+        </div>
     </div>
+
     
 </div>
