@@ -22,7 +22,6 @@ export class ViewStudentsComponent {
   constructor(private studentService: StudentService, private route: ActivatedRoute){}
 
   getAllStudent(){
-    // this.studentService.getAllStudent().subscribe(student=> this.students = student)
     this.studentService.getAllStudent().subscribe({
       next: (data)=>{
         (this.students = data.reverse())
