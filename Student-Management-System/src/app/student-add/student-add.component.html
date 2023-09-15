@@ -109,7 +109,16 @@
               
                   <div class="form-group">
                     <label for="course" class="course">Course</label>
-                    <input id="course" required type="text" placeholder="Course" [(ngModel)] = "studentDetails.course" class="form-control" name="course" >
+                    <input list="co" id="course" required type="text" placeholder="Course" [(ngModel)] = "studentDetails.course" class="form-control" name="course" >
+                    <datalist id="co">
+                      <option value="Art">
+                        <option value="Music">
+                          <option value="Business Management">
+                            <option value="IT">
+                              <option value="Civil"></option>
+                            
+
+                    </datalist>
                   </div>
 
         <button type="submit" (click)="post()">Add Student</button>
