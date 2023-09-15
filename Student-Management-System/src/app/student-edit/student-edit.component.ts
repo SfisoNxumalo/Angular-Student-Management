@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router'; // Import ActivatedRoute
+import { Component } from '@angular/core';
 import { StudentService } from '../student.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-student-edit',
@@ -9,8 +9,9 @@ import { StudentService } from '../student.service';
 })
 export class StudentEditComponent implements OnInit {
 
-  student: any;
-  id: string;
+  constructor(private serviceStudents : StudentService){}
+
+  studentDetails = {
 
   constructor(
     private studentService: StudentService, // Use correct service name
@@ -50,15 +51,18 @@ export class StudentEditComponent implements OnInit {
 
 
 
+// updateStudent(){
+//   this.serviceStudents.put(this.studentDetails).subscribe({
 
+//   });
 
+// onSave(){
 
-
-
-
-
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
   
+// console.log(this.studentDetails)
+// this.student.push(this.studentDetails)
+// // console.log(this.student)
 
-
-
+// }
+}
