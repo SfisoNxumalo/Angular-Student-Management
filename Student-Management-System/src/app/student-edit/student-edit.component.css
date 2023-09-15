@@ -14,6 +14,25 @@
     padding-left: 2%;
 } 
 
+.container .action-holder button{
+    height: 40px;
+    width: 45px;
+    border-radius: 100%;
+    padding: 5px;
+    font-size:x-large;
+    text-align: center;
+    border: 0px solid transparent;
+}
+
+.container .action-holder button:hover{
+    background-color: #4F94CD;
+    color: white;
+    font-weight: bold;
+    /* transform: translateY(4px); */
+    box-shadow: 0 4px 5px rgba(94, 94, 94, 0.35);
+}
+
+
 /* .studentNo{
     margin-top: 15%;
     position: relative;
