@@ -26,14 +26,14 @@ student: any
 
   studentDetails = {
 
-      studentNumber: "",
-      firstName: "",
-      lastName: "",
-      email: "",
-      phoneNumber: "",
-      address: "",
-      dateOfBirth: "",
-      course: ""
+      studentNumber: student.studentNumber,
+      firstName: student.firstName,
+      lastName: student.lastName,
+      email: student.email,
+      phoneNumber: student.phoneNumber,
+      address: student.address,
+      dateOfBirth: student.dateOfBirth,
+      course: student.course
       
 }
 
