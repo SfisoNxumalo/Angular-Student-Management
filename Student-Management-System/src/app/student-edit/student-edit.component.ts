@@ -57,6 +57,21 @@ student?: any;
     }
   }
 
+mCheckValues(){
+if(!this.studentDetails.studentNumber){return false}
+else if(!this.studentDetails.firstName){return false}
+else if(!this.studentDetails.lastName){return false}
+else if(!this.studentDetails.email){return false}
+else if(!this.studentDetails.phoneNumber){return false}
+else if(!this.studentDetails.address){return false}
+else if(!this.studentDetails.course){return false}
+else if(!this.studentDetails. dateOfBirth){return false}
+else{
+return true;
+}
+
+}
+
 post() {
   this.serviceStudents.post(this.studentDetails).subscribe({
     next: (data)=> {
