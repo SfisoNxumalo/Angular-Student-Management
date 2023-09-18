@@ -11,11 +11,11 @@ export class StudentAddComponent {
   constructor(private serviceStudents: StudentService){}
 
  
-  studentNumber!: number
+  studentNumber= ""
     firstName=""
     lastName=""
     email=""
-    phoneNumber!:number
+    phoneNumber=""
     address=""
     dateOfBirth=""
     course=""
@@ -29,14 +29,28 @@ export class StudentAddComponent {
       address: this.address,
       course: this.course,
       dateOfBirth:this.dateOfBirth
-
-
     }
 
+  mClear(){
+    this.studentDetails = {
+      studentNumber:"",
+      firstName: "",
+      lastName:"",
+      email:"",
+      phoneNumber: "",
+      address: "",
+      course: "",
+      dateOfBirth:""
+    }
+  }
 
 post(){
   this.serviceStudents.post(this.studentDetails).subscribe({
-    next: (data)=> {console.log(data)},
+    next: (data)=> {
+      console.log(data);
+      this.mClear();
+
+    },
     error: (e)=>{console.log("stude", e)}
   })
 

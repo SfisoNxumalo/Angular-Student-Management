@@ -63,12 +63,11 @@ th:nth-child(6){
 }
 
 .div-table table tbody tr:nth-of-type(even){
-    background-color: rgb(209, 206, 206);
+   background-color: whitesmoke;
 }
 
 .div-table table tbody tr:hover{
-    font-weight: bold;
-
+    background-color: rgb(209, 206, 206);
 }
 
 .div-table table tbody td{

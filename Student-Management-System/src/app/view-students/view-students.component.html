@@ -8,7 +8,7 @@
     <table>
         <thead>
             <tr>
-                <th>ID</th>
+                <th>#</th>
                 <th>Student Number</th>
                 <th>Firstname</th>
                 <th>Lastname</th>
@@ -19,8 +19,8 @@
             </thead>
 
         <tbody>
-           <tr *ngFor="let student of students" routerLink="/student-edit/{{student.studentNumber}}">
-                <td>
+           <tr *ngFor="let student of students; index as i" routerLink="/student-edit/{{student.studentNumber}}">
+                <td>{{i+1}}
                 </td>
                 <td>{{student.studentNumber}}</td>
                 <td>{{student.firstName}}</td>
