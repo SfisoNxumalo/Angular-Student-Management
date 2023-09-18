@@ -21,6 +21,8 @@ export class ViewStudentsComponent {
 
   constructor(private studentService: StudentService, private route: ActivatedRoute){}
 
+ 
+
   getAllStudent(){
     this.studentService.getAllStudent().subscribe({
       next: (data)=>{
@@ -42,3 +44,7 @@ export class ViewStudentsComponent {
     })
   }
 }
+
+
+
+

@@ -37,7 +37,7 @@ export class StudentAddComponent {
 post(){
   this.serviceStudents.post(this.studentDetails).subscribe({
     next: (data)=> {console.log(data)},
-    error: (e)=>{console.log("vgcgcvc", e)}
+    error: (e)=>{console.log("stude", e)}
   })
 
   // console.log(this.studentDetails)

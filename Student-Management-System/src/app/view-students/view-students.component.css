@@ -30,7 +30,9 @@ width: 0 !important	;
 
 .div-table table thead{
     border-style: none;
-    background-color: #4F94CD;
+    /* background-color: #4F94CD; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,32,66,1) 35%, rgba(0,212,255,1) 100%);
     color: white;
     font-size: 15px;
     border: 0px;
@@ -61,7 +63,7 @@ th:nth-child(6){
 }
 
 .div-table table tbody tr:nth-of-type(even){
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(209, 206, 206);
 }
 
 .div-table table tbody td{
