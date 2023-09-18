@@ -3,7 +3,9 @@
 nav {
     margin: 0px;
     height: 75px;
-    background-color: #4F94CD;
+    /* background-color: #4F94CD; */
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,32,66,1) 35%, rgba(0,212,255,1) 100%);
     padding: 8px 25px;
     display: flex;
     flex-direction: row;

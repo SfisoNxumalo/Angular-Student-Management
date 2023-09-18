@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: "dashboard", component: ViewStudentsComponent},
   {path:"add-student" ,component: StudentAddComponent },
   {path:"student-details", component: StudentDetailsComponent},
-  {path:"student-edit/:id", component: StudentEditComponent},
+  {path:"student-edit", component: StudentEditComponent},
   {path:"", redirectTo:"/dashboard", pathMatch:"full"}
 ];
 
