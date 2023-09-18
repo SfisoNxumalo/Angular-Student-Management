@@ -11,8 +11,6 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 export class ViewStudentsComponent {
-
-  
   students: any[] =[];
   ngOnInit(): void{
     this.getAllStudent()
@@ -29,16 +27,6 @@ export class ViewStudentsComponent {
         // (this.students = data)
         // console.log(data)
         (this.students = data.reverse())
-      },
-      error: (e)=> console.log(e)
-    })
-  }
-
-  getOne(){
-    const id = this.route.snapshot.params[('id')]
-    this.studentService.getStudent(id).subscribe({
-      next: (data)=>{
-        console.log(data)
       },
       error: (e)=> console.log(e)
     })

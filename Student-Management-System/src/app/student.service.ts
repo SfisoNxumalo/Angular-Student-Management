@@ -35,7 +35,7 @@ export class StudentService {
 
   getAllStudent(){
     
-    return this.http.get<any[]>(`${student_api}/getStudents`)
+    return this.http.get<any[]>(student_api+"getStudents")
   }
 
   deleteOne (data:any, id: any){
