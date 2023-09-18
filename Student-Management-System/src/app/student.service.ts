@@ -22,11 +22,9 @@ export class StudentService {
     return this.http.post(
       student_api + "create",
       data
-       
-
-      
     );
   }
+
   getStudent(id: any){
     return this.http.get(student_api+"getStudents/"+id)
   }
