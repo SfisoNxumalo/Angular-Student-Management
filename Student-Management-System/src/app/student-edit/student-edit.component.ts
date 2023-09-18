@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./student-edit.component.css']
 })
 export class StudentEditComponent implements OnInit {
-student: any
+student?: any;
   constructor(private serviceStudents : StudentService, private route : ActivatedRoute){}
   
   editable = true;
@@ -26,14 +26,14 @@ student: any
 
   studentDetails = {
 
-      studentNumber: student.studentNumber,
-      firstName: student.firstName,
-      lastName: student.lastName,
-      email: student.email,
-      phoneNumber: student.phoneNumber,
-      address: student.address,
-      dateOfBirth: student.dateOfBirth,
-      course: student.course
+      studentNumber: this.student.studentNumber,
+      firstName: this.student.firstName,
+      lastName: this.student.lastName,
+      email: this.student.email,
+      phoneNumber: this.student.phoneNumber,
+      address: this.student.address,
+      dateOfBirth: this.student.dateOfBirth,
+      course: this.student.course
       
 }
 
