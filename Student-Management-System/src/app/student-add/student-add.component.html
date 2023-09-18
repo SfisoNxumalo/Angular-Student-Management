@@ -1,59 +1,61 @@
-           <div class="container">
-                <h1>Add Details</h1>
-                <form #userForm>
-                  <div class="form-group">
-                    <label for="studentNo" class="studentNo">Student Number</label>
-                    <input id="studentNo" type="text" required placeholder="Student Number" class="form-control" name="studentNo" [(ngModel)] = "studentDetails.studentNumber" >
-                  </div>
-              
-                  <div class="form-group">
-                    <label for="firstName" class="firstName">First Name</label>
-                    <input id="firstName" type="text" required placeholder="First Name" class="form-control" name="firstName"  [(ngModel)] = "studentDetails.firstName" >
-                  </div>
-              
-                  <div class="form-group">
-                    <label for="lastName" class="lastName">Last Name</label>
-                    <input id="lastName" type="text" required placeholder="Last Name" class="form-control" name="lastName" [(ngModel)] = "studentDetails.lastName" >
-                  </div>
-              
-                  <div class="form-group">
-                    <label for="dateOfBirth" class="dateOfBirth">Date of Birth</label>
-                    <input id="dateOfBirth" required type="date" placeholder="Date of Birth" class="form-control" name="dateOfBirth" [(ngModel)] = "studentDetails.dateOfBirth" >
-                  </div>
-              
-                  <div class="form-group">
-                    <label for="emailAddress" class="emailAddress">Email Address</label>
-                    <input id="emailAddress" required type="text" name="studentDetails.email" placeholder="Email Address" class="form-control" [(ngModel)] = "studentDetails.email" >
-                  </div>
-              
-                  <div class="form-group">
-                    <label for="cellNo" class="cellNo">Cell Number</label>
-                    <input id="cellNo" required type="text" placeholder="Cell Number" class="form-control" [(ngModel)] = "studentDetails.phoneNumber" name="phoneNumber" >
-                  </div>
-              
-                  <div class="form-group">
-                    <label for="address" class="address">Physical Address</label>
-                    <textarea id="address" rows="8" cols="118%"  required type="text" placeholder="Physical Address"   [(ngModel)] = "studentDetails.address" class="form-control" name="address" ></textarea>
-                  </div>
-              
-                  <div class="form-group">
-                    <label for="course" class="course">Course</label>
+<h2>Students</h2>
+           
+<div class="container">
+    <form #userForm>
+      <div class="form-group">
+        <label for="studentNo" class="studentNo">Student Number</label>
+        <input id="studentNo" type="text" required placeholder="Student Number" class="form-control" name="studentNo" [(ngModel)] = "studentDetails.studentNumber" >
+      </div>
+  
+      <div class="form-group">
+        <label for="firstName" class="firstName">First Name</label>
+        <input id="firstName" type="text" required placeholder="First Name" class="form-control" name="firstName"  [(ngModel)] = "studentDetails.firstName" >
+      </div>
+  
+      <div class="form-group">
+        <label for="lastName" class="lastName">Last Name</label>
+        <input id="lastName" type="text" required placeholder="Last Name" class="form-control" name="lastName" [(ngModel)] = "studentDetails.lastName" >
+      </div>
+  
+      <div class="form-group">
+        <label for="dateOfBirth" class="dateOfBirth">Date of Birth</label>
+        <input id="dateOfBirth" required type="date" placeholder="Date of Birth" class="form-control" name="dateOfBirth" [(ngModel)] = "studentDetails.dateOfBirth" >
+      </div>
+  
+      <div class="form-group">
+        <label for="emailAddress" class="emailAddress">Email Address</label>
+        <input id="emailAddress" required type="text" name="studentDetails.email" placeholder="Email Address" class="form-control" [(ngModel)] = "studentDetails.email" >
+      </div>
+  
+      <div class="form-group">
+        <label for="cellNo" class="cellNo">Cell Number</label>
+        <input id="cellNo" required type="text" placeholder="Cell Number" class="form-control" [(ngModel)] = "studentDetails.phoneNumber" name="phoneNumber" >
+      </div>
+  
+      <div class="form-group">
+        <label for="address" class="address">Physical Address</label>
+        <textarea id="address" rows="8" cols="118%"  required type="text" placeholder="Physical Address"   [(ngModel)] = "studentDetails.address" class="form-control" name="address" ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="course" class="course">Course</label>
 
-                    <select list="co" id="course" required type="text" placeholder="Course" [(ngModel)] = "studentDetails.course" class="form-control" name="course" >
-                    <!-- <datalist id="co"> -->
-                      <option value="Art">Art</option>
-                        <option value="Music">Music</option>
-                          <option value="Business">Business</option>
-                            <option value="IT">IT</option>
-                              <option value="Civil">Civil</option>
-                            
-                              
+        <select list="co" id="course" required type="text" placeholder="Course" [(ngModel)] = "studentDetails.course" class="form-control" name="course" >
+        <!-- <datalist id="co"> -->
+          <option value="Art">Art</option>
+            <option value="Music">Music</option>
+              <option value="Business">Business</option>
+                <option value="IT">IT</option>
+                  <option value="Civil">Civil</option>
+                
+                  
 
-                    </select>
-                  </div>
+        </select>
+      </div>
 
-        <button type="submit" (click)="post()">Add Student</button>
+<button type="submit" (click)="post()">Add Student</button>
     </form>
+</div>
 
     
 
