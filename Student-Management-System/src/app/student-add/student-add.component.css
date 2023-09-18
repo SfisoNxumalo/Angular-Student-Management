@@ -1,23 +1,23 @@
-         h2 {
+          /* h2 {
             margin-left: 45%;
-         }
+         } */
         /* Style the form container */
-        form {
+        /* form {
             
             margin: 0 auto;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             /* margin-left: 5%; */
-        }
+        /* }  */
 
         /* Style the form labels and inputs */
-        label {
+        /* label {
             display: block;
             margin-bottom: 5px;
             margin-left: 25%;
-        }
-
+        } */
+/* 
         input[type="text"],
         input[type="email"],
         input[type="date"],
@@ -29,12 +29,12 @@
             border-radius: 4px;
             margin-left: 25%;
 
-        }
-        textarea{
+        } */
+        /* textarea{
             margin-left: 25%;
-          }
+          } */
 
-        /* Style the submit button */
+        /* Style the submit button
         button[type="submit"] {
             background-color: #1d1f20;
             color: white;
@@ -44,11 +44,83 @@
             cursor: pointer;
             margin-left: 51.5%;
             width: 25%;
-        }
+        } */
         
-         /* Add hover effect to the submit button */
+         /* Add hover effect to the submit button
          button[type="submit"]:hover {
             background-color: #000000;
             
-        }
+        } */
+
+
+        /* h1 {
+    margin-left: 45%;
+    margin-top: -1%;
+ }
+/* Style the form container */
+ form {
+    /* max-width: 400px; */
+     margin: 0 auto;
+    width: 900px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 17%;
+    padding-left: 2%;
+} 
+
+.container .action-holder button{
+    height: 40px;
+    width: 45px;
+    border-radius: 100%;
+    padding: 5px;
+    font-size:x-large;
+    text-align: center;
+    border: 0px solid transparent;
+}
+
+.container .action-holder button:hover{
+    background-color: #4F94CD;
+    color: white;
+    font-weight: bold;
+    /* transform: translateY(4px); */
+    box-shadow: 0 4px 5px rgba(94, 94, 94, 0.35);
+} */
+
+
+
+
+
+
+.container {
+    text-align: center;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    flex: 1;
+    /* text-align: right; */
+    padding-right: 20px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="date"] {
+    flex: 2;
+    width:30%;
+    margin-left: 12%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button-group {
+    text-align: center;
+    margin-top: 20px;
+  }
          
