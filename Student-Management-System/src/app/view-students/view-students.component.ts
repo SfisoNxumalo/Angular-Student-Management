@@ -20,14 +20,15 @@ export class ViewStudentsComponent {
   constructor(private studentService: StudentService, private route: ActivatedRoute){}
 
  
+  getTableCount(){
+    // console.log(table.rows.length)
+  }
 
   getAllStudent(){
     this.studentService.getAllStudent().subscribe({
-      next: (data)=>{
-        // (this.students = data)
-        // console.log(data)
-        (this.students = data.reverse())
-      },
+      next: (data)=>{(
+        this.students = data.reverse()
+        )},
       error: (e)=> console.log(e)
     })
   }

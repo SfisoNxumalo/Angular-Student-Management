@@ -4,33 +4,33 @@
     
 <app-search-student></app-search-student>
 
-<div class="div-table">
-    <table>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Student Number</th>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>DOB</th>
-                <th>Course</th>
-            </tr>
+    <div class="div-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Student Number</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>DOB</th>
+                    <th>Course</th>
+                </tr>
 
-            </thead>
+                </thead>
 
-        <tbody>
-           <tr *ngFor="let student of students; index as i" routerLink="/student-edit/{{student.studentNumber}}">
-                <td>{{i+1}}
-                </td>
-                <td>{{student.studentNumber}}</td>
-                <td>{{student.firstName}}</td>
-                <td>{{student.lastName}}</td>
-                <td>{{student.dateOfBirth}}</td>
-                <td>{{student.course}}</td>
-            </tr>
-            
-        </tbody>
-    </table>
-</div>
+            <tbody>
+            <tr *ngFor="let student of students; index as i" routerLink="/student-edit/{{student.studentNumber}}">
+                    <td>{{i+1}}
+                    </td>
+                    <td>{{student.studentNumber}}</td>
+                    <td>{{student.firstName}}</td>
+                    <td>{{student.lastName}}</td>
+                    <td>{{student.dateOfBirth}}</td>
+                    <td>{{student.course}}</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
 </div>
 
