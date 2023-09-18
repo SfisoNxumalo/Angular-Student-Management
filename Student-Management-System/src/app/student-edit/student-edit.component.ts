@@ -64,6 +64,7 @@ getOne(){
 // // console.log(this.student)
 
 // }
+
 }
 
 
