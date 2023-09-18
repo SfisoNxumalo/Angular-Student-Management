@@ -24,17 +24,48 @@ student?: any;
  
   }
 
-  studentDetails = {
-
-    studentNumber: "",
-    firstName: "",
-    lastName: "",
-    email: "",
-    phoneNumber: "",
-    address: "",
-    dateOfBirth: "",
-    course: ""
+  studentNumber= ""
+    firstName=""
+    lastName=""
+    email=""
+    phoneNumber=""
+    address=""
+    dateOfBirth=""
+    course=""
     
+    studentDetails = {
+      studentNumber:this.studentNumber,
+      firstName: this.firstName,
+      lastName:this.lastName,
+      email:this.email,
+      phoneNumber: this.phoneNumber,
+      address: this.address,
+      course: this.course,
+      dateOfBirth:this.dateOfBirth
+    }
+
+  mClear(){
+    this.studentDetails = {
+      studentNumber:"",
+      firstName: "",
+      lastName:"",
+      email:"",
+      phoneNumber: "",
+      address: "",
+      course: "",
+      dateOfBirth:""
+    }
+  }
+
+post() {
+  this.serviceStudents.post(this.studentDetails).subscribe({
+    next: (data)=> {
+      console.log(data);
+      this.mClear();
+
+    },
+    error: (e)=>{console.log("stude", e)}
+  })
 }
 
   getOne(){
