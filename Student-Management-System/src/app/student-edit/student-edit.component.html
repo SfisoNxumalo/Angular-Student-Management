@@ -41,7 +41,7 @@
 
     <div class="form-group">
       <label for="address" class="address">Physical Address:</label>
-      <input id="address" required type="text" [disabled]="editable" placeholder="Physical Address"   [(ngModel)] = "studentDetails.address"class="form-control" name="address" >
+      <input id="address" required type="text" rows="8" cols="118%" [disabled]="editable" placeholder="Physical Address"   [(ngModel)] = "studentDetails.address"class="form-control" name="address" >
     </div>
 
     <div class="form-group">
@@ -51,7 +51,6 @@
   
       <div class="button-group">
         <button class="btn btn-primary" id="save" type="submit" click="onSave()">Save</button>
-        <button class="btn btn-primary" id="cancel" type="submit">Cancel</button>
       </div>
     </div>
 

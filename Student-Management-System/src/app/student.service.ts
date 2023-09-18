@@ -41,7 +41,7 @@ export class StudentService {
 
   deleteOne (data:any, id: any){
 
-    return this.http.put(student_api+id, data)
+    return this.http.delete(student_api+id, data)
   }
 
   searchHeroes(term: string): Observable<Student[]> {
