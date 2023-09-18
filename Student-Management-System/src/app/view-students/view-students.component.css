@@ -66,6 +66,11 @@ th:nth-child(6){
     background-color: rgb(209, 206, 206);
 }
 
+.div-table table tbody tr:hover{
+    font-weight: bold;
+
+}
+
 .div-table table tbody td{
     padding: 8px;
 }
