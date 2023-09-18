@@ -37,41 +37,23 @@ student?: any;
     
 }
 
-getOne(){
-  const id = this.route.snapshot.params[('id')]
-  this.serviceStudents.getStudent(id).subscribe({
-    next: (data)=>{
-      this.student = data
-      this.studentDetails = this.student[0]
-      
-    },
-    error: (e)=> console.log(e)
-  })
-}
+  getOne(){
+    const id = this.route.snapshot.params[('id')]
+    this.serviceStudents.getStudent(id).subscribe({
+      next: (data)=>{
+        this.student = data
+        console.log(data)
+      },
+      error: (e)=> console.log(e)
+    })
+  }
 
-
-// updateStudent(){
-//   this.serviceStudents.put(this.studentDetails).subscribe({
-
-//   });
-
-// onSave(){
-
-  
-// console.log(this.studentDetails)
-// this.student.push(this.studentDetails)
-// // console.log(this.student)
-
-// }
 }
 
 
 
 
 
-
-
-  
 
 
 
