@@ -20,8 +20,9 @@
             </thead>
 
         <tbody>
-            <tr *ngFor="let student of students">
-                <td>{{student.studentDetails}}</td>
+           <tr *ngFor="let student of students" routerLink="/student-edit/{{student.studentNumber}}">
+                <td>
+                </td>
                 <td>{{student.studentNumber}}</td>
                 <td>{{student.firstName}}</td>
                 <td>{{student.lastName}}</td>
