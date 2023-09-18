@@ -42,6 +42,7 @@ student?: any;
     this.serviceStudents.getStudent(id).subscribe({
       next: (data)=>{
         this.student = data
+        this.studentDetails = this.student[0]
         console.log(data)
       },
       error: (e)=> console.log(e)
