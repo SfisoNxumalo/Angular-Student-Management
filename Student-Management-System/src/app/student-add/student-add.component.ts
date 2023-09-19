@@ -10,7 +10,6 @@ export class StudentAddComponent {
 
   constructor(private serviceStudents: StudentService){}
 
- 
   studentNumber= ""
     firstName=""
     lastName=""
@@ -21,7 +20,7 @@ export class StudentAddComponent {
     course=""
     
     studentDetails= {
-      studentNumber:this.studentNumber,
+      studentNumber:  this.mGenerateStudentNumber(),
       firstName: this.firstName,
       lastName:this.lastName,
       email:this.email,
@@ -33,7 +32,7 @@ export class StudentAddComponent {
 
   mClear(){
     this.studentDetails = {
-      studentNumber:"",
+      studentNumber:this.mGenerateStudentNumber(),
       firstName: "",
       lastName:"",
       email:"",
@@ -42,6 +41,12 @@ export class StudentAddComponent {
       course: "",
       dateOfBirth:""
     }
+  }
+
+  mGenerateStudentNumber():string {
+
+    return String(Math.floor(Math.random() * 5000000) + 1000000);
+
   }
 
   StuEmpty = false;

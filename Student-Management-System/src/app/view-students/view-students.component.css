@@ -68,6 +68,7 @@ th:nth-child(6){
 
 .div-table table tbody tr:hover{
     background-color: rgb(209, 206, 206);
+    cursor: pointer;
 }
 
 .div-table table tbody td{

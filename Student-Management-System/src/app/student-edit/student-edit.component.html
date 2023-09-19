@@ -49,10 +49,31 @@
       <label for="address" class="address">Physical Address:</label>
       <input id="address" required type="text" rows="8" cols="118%" [disabled]="editable" placeholder="Physical Address"   [(ngModel)] = "studentDetails.address"class="form-control" name="address" >
     </div>
+<!-- 
+    <div class="form-group">
+      <label for="course" class="course">Course</label>
+
+      <select list="co" id="course" required type="text" placeholder="Course" [(ngModel)] = "studentDetails.course" class="form-control" name="course" >
+        <label class="required-class" *ngIf="couEmpty">!</label>
+       <datalist id="co">
+        
+      </select>
+    </div> -->
 
     <div class="form-group">
       <label for="course" class="course">Course:</label>
-      <input id="course" required type="text" [disabled]="editable" placeholder="Course" [(ngModel)] = "studentDetails.course" class="form-control" name="course" >
+      <select id="course" required type="text" [disabled]="editable" placeholder="Course" [(ngModel)] = "studentDetails.course" class="form-control" name="course" >
+
+        <option value="Art">Art</option>
+        <option value="Music">Music</option>
+        <option value="Business">Business</option>
+        <option value="IT">IT</option>
+        <option value="CivilEng">Civil Eng.</option>
+        <option value="Medicine">Medicine.</option>
+        <option value="Nursing">Nursing</option>
+        <option value="Networking">Networking</option>
+
+      </select>
       <label class="required-class" *ngIf="couEmpty">!</label>
     </div>
   

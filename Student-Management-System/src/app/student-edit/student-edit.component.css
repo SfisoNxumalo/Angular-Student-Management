@@ -92,6 +92,17 @@ svg{
     align-items: center;
     margin-bottom: 10px;
   }
+
+  #course{
+    flex: 2;
+    width:30%;
+    margin-left: 12%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+  }
   
   .form-group label {
     flex: 1;
