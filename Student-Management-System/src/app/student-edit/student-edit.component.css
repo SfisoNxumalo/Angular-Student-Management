@@ -40,6 +40,11 @@
       box-shadow: 0 4px 5px rgba(94, 94, 94, 0.35);
   }
 
+  .message{
+    color: green;
+    font-weight: bold;
+  }
+
   .required-class{
     color: Red;
     font-weight: bold;

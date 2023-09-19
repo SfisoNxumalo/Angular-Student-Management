@@ -19,6 +19,12 @@
   max-width: 0px;
 }
 
+.message{
+  color: green;
+  font-weight: bold;
+  text-align: end;
+}
+
 .container .action-holder button{
     height: 40px;
     width: 45px;

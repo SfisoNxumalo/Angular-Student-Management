@@ -29,7 +29,7 @@ export class StudentService {
     return this.http.get(student_api+"getStudents/"+id)
   }
   updateStudents(data: any, id: any){
-    return this.http.put(`${student_api+id}`, data)
+    return this.http.put(student_api+"updateStudents/"+id, data)
   }
 
   getAllStudent(){

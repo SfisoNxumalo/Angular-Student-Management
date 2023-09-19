@@ -93,13 +93,16 @@ return true;
 }
 }
 
-post() {
+show = false;
 
+onSave() {
+  this.show = false;
   if(this.mCheckValues()) {
-    this.serviceStudents.post(this.studentDetails).subscribe({
+    this.serviceStudents.updateStudents(this.studentDetails, this.studentDetails.studentNumber).subscribe({
         next: (data)=> {
           console.log(data);
-          this.mClear();
+          this.editable = true;
+          this.show = true;
 
         },
         error: (e)=>{console.log("stude", e)}

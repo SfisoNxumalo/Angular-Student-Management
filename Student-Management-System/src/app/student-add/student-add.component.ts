@@ -81,6 +81,8 @@ return true;
 
 }
 
+show = false;
+
 post(){
 
   if(this.mCheckValues()){
@@ -88,6 +90,7 @@ post(){
     next: (data)=> {
       console.log(data);
       this.mClear();
+      this.show = true;
 
     },
     error: (e)=>{console.log("stude", e)}

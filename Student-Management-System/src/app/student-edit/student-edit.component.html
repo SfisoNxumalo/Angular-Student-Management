@@ -57,8 +57,8 @@
     </div>
   
       <div class="button-group">
-        <button class="btn btn-primary" id="save" type="submit" click="onSave()">Save</button>
-       
+        <label *ngIf="show" class="message">Update Successful</label>
+        <button class="btn btn-primary" id="save" type="submit" (click)="onSave()">Save</button>
       </div>
     </div>
 
