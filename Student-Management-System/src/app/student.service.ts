@@ -37,9 +37,9 @@ export class StudentService {
     return this.http.get<any[]>(student_api+"getStudents")
   }
 
-  deleteOne (data:any, id: any){
+  deleteOne (id: string){
 
-    return this.http.delete(student_api+id, data)
+    return this.http.delete(student_api+"deleteOne/"+id)
   }
 
   searchHeroes(term: string): Observable<Student[]> {

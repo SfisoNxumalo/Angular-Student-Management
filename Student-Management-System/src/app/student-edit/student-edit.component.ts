@@ -95,6 +95,12 @@ post() {
     })
   }
 
+  deleteOne(){
+    this.serviceStudents.deleteOne(this.studentDetails.studentNumber).subscribe(data => {
+      alert('Success');
+  });
+}
+
 }
 
 
