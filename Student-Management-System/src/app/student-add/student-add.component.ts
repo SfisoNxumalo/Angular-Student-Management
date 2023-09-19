@@ -44,7 +44,7 @@ export class StudentAddComponent {
     }
   }
 
-mCheckValues(){
+mCheckValues(): boolean{
 if(!this.studentDetails.studentNumber){return false}
 else if(!this.studentDetails.firstName){return false}
 else if(!this.studentDetails.lastName){return false}
@@ -60,7 +60,9 @@ return true;
 }
 
 post(){
-  this.serviceStudents.post(this.studentDetails).subscribe({
+
+  if(this.mCheckValues()){
+    this.serviceStudents.post(this.studentDetails).subscribe({
     next: (data)=> {
       console.log(data);
       this.mClear();
@@ -68,6 +70,8 @@ post(){
     },
     error: (e)=>{console.log("stude", e)}
   })
+  }
+  
 
   // console.log(this.studentDetails)
 }
