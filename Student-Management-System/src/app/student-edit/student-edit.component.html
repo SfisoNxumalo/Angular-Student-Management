@@ -11,42 +11,49 @@
 
     <div class="form-group">
       <label for="studentNo" class="studentNo">Student Number:</label>
-      <input id="studentNo" type="text" [disabled]="editable" required placeholder="Student Number" class="form-control" name="studentNo" [(ngModel)] = "studentDetails.studentNumber">
+      <input id="studentNo" type="text" [disabled]="true" required placeholder="Student Number" class="form-control" name="studentNo" [(ngModel)] = "studentDetails.studentNumber">
+      <label class="required-class" *ngIf="StuEmpty">!</label>
     </div>
 
     <div class="form-group">
       <label for="firstName" class="firstName">First Name:</label>
       <input id="firstName" type="text" [disabled]="editable" required  placeholder="First Name" class="form-control" name="firstName"  [(ngModel)] = "studentDetails.firstName" >
+      <label class="required-class" *ngIf="namEmpty">!</label>
     </div>
 
     <div class="form-group">
       <label for="lastName" class="lastName">Last Name:</label>
       <input id="lastName" type="text" [disabled]="editable" required placeholder="Last Name" class="form-control" name="lastName" [(ngModel)] = "studentDetails.lastName" >
+      <label class="required-class" *ngIf="lnamEmpty">!</label>
     </div>
 
     <div class="form-group">
       <label for="dateOfBirth" class="dateOfBirth">Date of Birth:</label>
       <input id="dateOfBirth" required type="date" [disabled]="editable" placeholder="Date of Birth" class="form-control" name="dateOfBirth" [(ngModel)] = "studentDetails.dateOfBirth" >
+      <label class="required-class" *ngIf="dobEmpty">!</label>
     </div>
 
     <div class="form-group">
       <label for="emailAddress" class="emailAddress">Email Address:</label>
       <input id="emailAddress" required type="text" [disabled]="editable" placeholder="Email Address" class="form-control" [(ngModel)] = "studentDetails.email" name="emailAddress" >
+      <label class="required-class" *ngIf="emaEmpty">!</label>
     </div>
 
     <div class="form-group">
       <label for="cellNo" class="cellNo">Cell Number:</label>
       <input id="cellNo" required type="text" [disabled]="editable" placeholder="Cell Number" class="form-control" [(ngModel)] = "studentDetails.phoneNumber" name="cellNo" >
+      <label class="required-class" *ngIf="cellEmpty">!</label>
     </div>
 
     <div class="form-group">
       <label for="address" class="address">Physical Address:</label>
-      <input id="address" required type="text" [disabled]="editable" placeholder="Physical Address"   [(ngModel)] = "studentDetails.address"class="form-control" name="address" >
+      <input id="address" required type="text" rows="8" cols="118%" [disabled]="editable" placeholder="Physical Address"   [(ngModel)] = "studentDetails.address"class="form-control" name="address" >
     </div>
 
     <div class="form-group">
       <label for="course" class="course">Course:</label>
       <input id="course" required type="text" [disabled]="editable" placeholder="Course" [(ngModel)] = "studentDetails.course" class="form-control" name="course" >
+      <label class="required-class" *ngIf="couEmpty">!</label>
     </div>
   
       <div class="button-group">

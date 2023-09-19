@@ -57,19 +57,40 @@ student?: any;
     }
   }
 
-mCheckValues():boolean{
-if(!this.studentDetails.studentNumber){return false}
-else if(!this.studentDetails.firstName){return false}
-else if(!this.studentDetails.lastName){return false}
-else if(!this.studentDetails.email){return false}
-else if(!this.studentDetails.phoneNumber){return false}
-else if(!this.studentDetails.address){return false}
-else if(!this.studentDetails.course){return false}
-else if(!this.studentDetails. dateOfBirth){return false}
+  StuEmpty = false;
+  couEmpty = false;
+  addEmpty = false;
+  cellEmpty = false;
+  emaEmpty = false;
+  dobEmpty = false;
+  lnamEmpty = false;
+  namEmpty = false;
+
+
+mCheckValues(): boolean{
+  this.StuEmpty = false;
+  this.couEmpty = false;
+  this.addEmpty = false;
+  this.cellEmpty = false;
+  this.emaEmpty = false;
+  this.dobEmpty = false;
+  this.lnamEmpty = false;
+  this.namEmpty = false;
+  
+if(!this.studentDetails.studentNumber){
+  this.StuEmpty=true;
+  return false}
+else if(!this.studentDetails.firstName){this.namEmpty = true;return false}
+else if(!this.studentDetails.lastName){this.lnamEmpty = true; return false}
+else if(!this.studentDetails. dateOfBirth){this.dobEmpty = true;return false}
+else if(!this.studentDetails.email){this.emaEmpty = true;return false}
+else if(!this.studentDetails.phoneNumber){this.cellEmpty = true;return false}
+else if(!this.studentDetails.address){this.addEmpty = true;return false}
+else if(!this.studentDetails.course){this.couEmpty = true;return false}
+
 else{
 return true;
 }
-
 }
 
 post() {

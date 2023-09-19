@@ -13,6 +13,12 @@
     padding-left: 2%;
 } 
 
+.required-class{
+  color: Red;
+  font-weight: bold;
+  max-width: 0px;
+}
+
 .container .action-holder button{
     height: 40px;
     width: 45px;
